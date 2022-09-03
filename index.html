@@ -92,7 +92,7 @@
                         <option value="WY">Wyoming</option>
                     </datalist>
                     <label for="zip">Your Zipcode</label>
-                    <input type="number" id="zip" name="zip">
+                    <input type="text" id="zip" name="zip" pattern=[0-9]{5}>
                 </div>
             </fieldset>
 
@@ -135,6 +135,10 @@
                 <div>
                     <input type="checkbox" id="drinks" name="extras" value="Drinks Package"> 
                     <label for="drinks">All-inclusive Drinks Package</label>
+                </div>
+                <div>
+                    <label for="secret code">Your Secret Code(must be 6 alphanumeric characters)</label><span class="required-field">*</span>
+                    <input type="password" required title="6 Alphanumeric Character Passcode" pattern="[0-9]{6}">
                 </div>
             </fieldset>
             
